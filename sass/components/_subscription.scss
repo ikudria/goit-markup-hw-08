@@ -37,7 +37,7 @@
 
 .subscribe__email {
     
-    margin-right: 12px;
+    
     padding: 15px;
     font-family: inherit;
     font-weight: 400;
@@ -50,13 +50,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: inherit;
 
-    @media screen and (max-width: 1199px) {
-        width: 100%;
+    width: 100%;
         margin-bottom: 20px;
-    }
+
 
          @media screen and (min-width: 1200px) {
-            width: 358px;;
+            width: 358px;
+            margin-right: 12px;
+            margin-bottom: 0;
     
          }
 }

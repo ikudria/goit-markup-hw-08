@@ -98,6 +98,7 @@ img {
 .site-nav__container {
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 
 .logo__header {
@@ -110,8 +111,6 @@ img {
 @media screen and (max-width: 767px) {
   .logo__header {
     text-align: left;
-    padding-top: 16px;
-    padding-bottom: 16px;
     margin: 0;
     font-weight: 700;
     font-size: 24px;
@@ -1109,7 +1108,6 @@ img {
 }
 
 .subscribe__email {
-  margin-right: 12px;
   padding: 15px;
   font-family: inherit;
   font-weight: 400;
@@ -1121,18 +1119,15 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: inherit;
-}
-
-@media screen and (max-width: 1199px) {
-  .subscribe__email {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe__email {
     width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1396,6 +1391,10 @@ img {
 }
 
 .menu-button {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   display: inline-flex;
   margin: 0;
   padding: 0;
