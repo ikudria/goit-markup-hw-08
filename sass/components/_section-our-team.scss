@@ -1,0 +1,107 @@
+//Section "Our team"
+
+.section__team {
+  background-color: $passive-button-bg;
+}
+
+.team {
+  padding: 0;
+  margin: 0;
+  align-items:center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.team__item {
+
+    // padding: 0;
+    // margin: 0;
+   
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        align-items: center;
+
+        &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+      
+    }
+
+  
+  // height: 428px;
+  // width: 270px;
+  // text-align: center;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
+  background-color: $main-white-color;
+
+  // &:not(:last-child) {
+  //     margin-right: 30px;
+  // }
+
+  // &:nth-child(4n) {
+  //     margin-right: 0;
+  // }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+     flex-basis: calc((100% - 1 * 30px) / 2);
+     margin-right: 30px;
+     margin-bottom: 30px;
+
+     &:nth-child(2n) {
+         margin-right: 0;
+     }
+
+     &:nth-last-child(-n + 2) {
+         margin-bottom: 0;
+     }
+
+ }
+
+   @media screen and (min-width: 1200px) {
+       flex-basis: calc((100% - 3 * 30px) / 4);
+       margin-right: 30px;
+
+       &:nth-child(4n) {
+           margin-right: 0;
+       }
+
+   }
+
+}
+
+.team__description {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.team__member {
+  @extend %title-margin-color;
+
+  @include font(16px, 1.1, 500);
+}
+
+.team__title {
+  @include font(16px, 1.19, 400);
+  color: $primary-text-color;
+  margin-bottom: 16px;
+}
+
+.social__icon-team {
+  fill: $passive-link-color;
+  transition: fill $transition;
+}
+
+.social__link:hover .social__icon-team,
+.social__link:focus .social__icon-team {
+  fill: $main-white-color;
+}

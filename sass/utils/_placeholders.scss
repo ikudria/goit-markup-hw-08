@@ -1,0 +1,15 @@
+%logo {
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  transition: color $transition;
+}
+
+
+
+
+%title-margin-color {
+  margin-bottom: 10px;
+  color: $title-text-color;
+}

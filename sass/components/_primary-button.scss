@@ -1,0 +1,34 @@
+// Primary-button
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
+  color: $main-white-color;
+  background-color: rgba(33, 150, 243, 1);
+  text-decoration: none;
+  text-align: center;
+  border-color: transparent;
+
+  font-family: inherit;
+  @include font(16px, 1.8, 700, 0.06em);
+
+  cursor: pointer;
+
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: rgba(24, 140, 232, 1);
+  }
+
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+  }
+}

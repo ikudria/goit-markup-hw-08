@@ -1,0 +1,39 @@
+
+.section {
+    /*outline: 10px dotted blue;*/
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    padding: 60px 0;
+
+ @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+        // padding-top: 94px;
+        // padding-bottom: 94px;
+
+
+}
+
+}
+
+
+
+.section__title {
+    margin-bottom: 30px;
+    // font-family: 'Roboto';
+    // font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    
+    // letter-spacing: 0.03em;
+
+    color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+       margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    }
+
+
+}

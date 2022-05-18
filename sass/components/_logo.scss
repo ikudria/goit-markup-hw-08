@@ -1,0 +1,19 @@
+// Logo
+
+.logo {
+  @extend %logo;
+
+
+  &__effect {
+    color: $accent-color;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:focus {
+    color: $accent-color;
+  }
+}
+

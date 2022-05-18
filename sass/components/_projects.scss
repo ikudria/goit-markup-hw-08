@@ -1,0 +1,154 @@
+/* Portfolio */
+.portfolio {
+    display: block;
+
+@media screen and (min-width: 768px) {
+     display: flex;
+    flex-wrap: wrap;
+}
+}
+
+
+
+
+
+// Project for desktop
+
+ .project {
+     
+   
+     width: 100%;
+     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 1 * 30px) / 2);
+        margin-right: 30px;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+         @media screen and (min-width: 1200px) {
+             width: calc((100% - 2 * 30px) / 3);
+             margin-right: 30px;
+            &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            &:nth-last-child(-n + 3) {
+                margin-bottom: 0;
+            }
+
+         }
+
+
+//     /*width: 370 px;*/
+//     flex-basis: calc((100% - 3 * 30px) / 3);
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+
+
+// &:nth-child(3n) {
+//     margin-right: 0;
+// }
+
+// &:nth-last-child(-n+3) {
+//     margin-bottom: 0;
+// }
+
+
+ &-details {
+    padding: 20px 24px;
+     border: 1px solid #EEEEEE;
+     border-top: none;
+    background-color: $main-white-color;
+     overflow: hidden;
+
+ }
+ }
+
+
+.project-title {
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06;
+//     margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.9;
+    color: $primary-text-color;
+
+}
+
+
+
+
+
+.preview {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.project:hover .project-description {
+    transform: translateY(0);
+}
+
+.info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    overflow: auto;
+
+}
+
+
+.project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 77px 24px;
+    // padding: 63px 24px;
+    display: flex;
+    background-color: rgba(33, 150, 243, 0.9);
+    align-items: center;
+    overflow: auto;
+    opacity: 1;
+
+    transform: translateY(100%);
+    transition: transform $transition;
+    transition: transform $transition;
+
+
+&:hover {
+    opacity: 1;
+
+}
+
+}
+
+.project-link {
+    display: block;
+    transition: box-shadow $transition;
+
+
+
+&:hover,
+&:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+
+}
+
+}

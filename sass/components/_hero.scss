@@ -1,0 +1,35 @@
+// Hero
+
+.hero {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-color: $overlay-bg-color;
+    background: linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include font(26px, 1.6, 900, 0.06em);
+    color: $main-white-color;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        @include font (44px, 1.36, 900, 00.06em);
+    }
+}

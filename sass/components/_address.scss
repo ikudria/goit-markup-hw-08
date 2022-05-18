@@ -1,0 +1,59 @@
+.address__container {
+    display: block;
+   
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        text-align: left;
+        
+    }
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__item {
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+    
+        }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+    
+        }
+
+
+}
+
+.address__location {
+    color: $main-white-color;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color $transition;
+}
+
+.address__email,
+.address__tel {
+    @include font (14px, 1.7, 400);
+    color: $additional-text-color;
+
+    transition: color $transition;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include font(12px, 1.16, 500, 0.02em);
+    }
+}
+
+.address__location:hover,
+.address__location:focus,
+.address__email:hover,
+.address__email:focus,
+.address__tel:hover,
+.address__tel:focus {
+    color: $accent-color;
+}
