@@ -48,6 +48,13 @@
 }
 
 .contact-list__icon {
-    margin-right: 10px;
-    fill: currentColor;
+margin-right: 10px;         
+    // fill: currentColor;
 }
+
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
+    fill: $accent-color;
+}
+
+ 

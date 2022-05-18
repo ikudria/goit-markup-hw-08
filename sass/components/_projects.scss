@@ -101,11 +101,15 @@
 
 .info {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.5;
     text-align: left;
     color: rgba(255, 255, 255, 1);
     overflow: auto;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 
 }
 
@@ -122,12 +126,11 @@
     background-color: rgba(33, 150, 243, 0.9);
     align-items: center;
     overflow: auto;
-    opacity: 1;
+    opacity: 0;
 
     transform: translateY(100%);
-    transition: transform $transition;
-    transition: transform $transition;
-
+    transition: transform $transition, opacity $transition;
+    
 
 &:hover {
     opacity: 1;

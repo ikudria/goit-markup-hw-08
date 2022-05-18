@@ -77,5 +77,8 @@
         <symbol id="menu" viewBox="0 0 32 32">
             <path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
         </symbol>
+        <symbol viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" />
+        </symbol>
     </defs>
 </svg>

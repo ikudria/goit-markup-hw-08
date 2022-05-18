@@ -35,6 +35,7 @@
             data-menu-button
           >
             <svg
+              class="menu__icon"
               width="40"
               height="40"
               aria-label="Переключатель мобильного меню"
@@ -44,9 +45,48 @@
             </svg>
           </button>
 
+          <!-- Mobile navigation -->
+          <div class="mobile-menu" data-menu>
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="" class="navigation_link">Студия </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation_link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation_link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__content">
+              <ul class="contact-us">
+                <li class="contact-us__item">
+                  <a href="" class="contact-us__tel">+38 096 111 11 11</a>
+                </li>
+                <li class="contact-us__item">
+                  <a href="" class="contact-us__email">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="follow-us">
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Twitter</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Facebook</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">LinkedIn</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Instagram </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <!-- Nav menu -->
-          <!-- <div class="mob-container"> -->
-          <ul class="site-nav__list" id="site-nav__list" data-menu>
+
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a
                 href="./index.html"
@@ -61,7 +101,6 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-          <!-- </div> -->
         </nav>
 
         <ul class="contact-list">
@@ -638,6 +677,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="/js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

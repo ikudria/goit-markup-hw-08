@@ -1,12 +1,8 @@
 
-// .site-nav__container {
-  
-// }
-
 .site-nav {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ececec;
+   
 
     &__current-page::after {
         content: '';
@@ -32,29 +28,18 @@
 .site-nav__list {
   display: flex;
 
-  // @media screen and (max-width: 768px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
-   @media screen and (max-width: 767px) {
-   display: none;
-   
-
-    &.is-open {
-      display: block;
-      position: absolute;
-        background-color: red;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
+  
   }
 
 //     @media screen and (min-width: 768px) and (max-width: 1199px)
 // {
 //   justify-content: center;
 // }    
-}
+
 
 .site-nav__item {
   &:not(:last-child) {
