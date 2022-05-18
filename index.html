@@ -49,10 +49,10 @@
           <div class="mobile-menu" data-menu>
             <ul class="navigation">
               <li class="navigation__item">
-                <a href="" class="navigation_link">Студия </a>
+                <a href="./index.html" class="navigation_link">Студия </a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation_link">Портфолио</a>
+                <a href="./portfolio.html" class="navigation_link">Портфолио</a>
               </li>
               <li class="navigation__item">
                 <a href="" class="navigation_link">Контакты</a>
@@ -205,9 +205,13 @@
                   <h2 class="services__description">Десктопные приложения</h2>
                 </div>
                 <img
-                  src="./images/box_1.jpg"
+                  srcset="
+                    ./images/projects/desktop_soft_1x.jpg 370w,
+                    ./images/projects/desktop_soft_2x.jpg 740w
+                  "
+                  sizes="370px"
+                  src=".images/projects/desktop_soft_1x.jpg"
                   alt="Прогрммист пишет код на десктоп компьютере согласно алгоритму"
-                  width="370"
                 />
               </a>
             </li>
@@ -218,9 +222,13 @@
                   <h2 class="services__description">Мобильные приложения</h2>
                 </div>
                 <img
-                  src="./images/box_2.jpg"
+                  srcset="
+                    ./images/projects/mobile_soft_1x.jpg 370w,
+                    ./images/projects/mobile_soft_2x.jpg 740w
+                  "
+                  sizes="370px"
+                  src=".images/projects/mobile_soft_1x.jpg"
                   alt="Пользователь сравнивает отображение на мобильном телефоне с макетами изображений на экране ноутбука"
-                  width="370"
                 />
               </a>
             </li>
@@ -231,9 +239,13 @@
                   <h2 class="services__description">Дизайнерские решения</h2>
                 </div>
                 <img
-                  src="./images/box_3.jpg"
+                  srcset="
+                    ./images/projects/design_1x.jpg 370w,
+                    ./images/projects/design_2x.jpg 740w
+                  "
+                  sizes="370px"
+                  src=".images/projects/design_1x.jpg"
                   alt="Дизайнер выбирает цвет из растра цветов на планшете"
-                  width="370"
                 />
               </a>
             </li>
@@ -250,9 +262,17 @@
             <li class="team__item">
               <a href=""
                 ><img
-                  src="./images/igor_demianenko.jpg"
-                  alt="Photo: Игорь Демьяненко"
-                  width="270"
+                  srcset="
+                    ./images/our_team/demianenko_1xd.jpg 270w,
+                    ./images/our_team/demianenko_1xt.jpg 354w,
+                    ./images/our_team/demianenko_1xm.jpg 450w,
+                    ./images/our_team/demianenko_2xd.jpg 540w,
+                    ./images/our_team/demianenko_2xt.jpg 708w,
+                    ./images/our_team/demianenko_2xm.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  src=".images/our_team/demianenko_1xm.jpg"
+                  alt="Игорь Демьяненко"
               /></a>
 
               <div class="team__description">
@@ -298,12 +318,21 @@
             </li>
 
             <li class="team__item">
-              <a href=""
-                ><img
-                  src="./images/olga_repina.jpg"
-                  alt="Photo: Ольга Репина"
-                  width="270"
-              /></a>
+              <a href="">
+                <img
+                  srcset="
+                    ./images/our_team/repina_1xd.jpg 270w,
+                    ./images/our_team/repina_1xt.jpg 354w,
+                    ./images/our_team/repina_1xm.jpg 450w,
+                    ./images/our_team/repina_2xd.jpg 540w,
+                    ./images/our_team/repina_1xd.jpg 708w,
+                    ./images/our_team/repina_2xm.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  src=".images/our_team/repina_1xm.jpg"
+                  alt="Ольга Репина"
+                />
+              </a>
               <div class="team__description">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p lang="en" class="team__title">Frontend Developer</p>
@@ -346,9 +375,17 @@
             <li class="team__item">
               <a href=""
                 ><img
-                  src="./images/nikolay_tarasov.jpg"
-                  alt="Photo: Николай Тарасов"
-                  width="270"
+                  srcset="
+                    ./images/our_team/tarasov_1xd.jpg 270w,
+                    ./images/our_team/tarasov_1xt.jpg 354w,
+                    ./images/our_team/tarasov_1xm.jpg 450w,
+                    ./images/our_team/tarasov_2xd.jpg 540w,
+                    ./images/our_team/tarasov_2xt.jpg 708w,
+                    ./images/our_team/tarasov_2xm.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  src=".images/our_team/tarasov_1xm.jpg"
+                  alt="Николай Тарасов"
               /></a>
               <div class="team__description">
                 <h3 class="team__member">Николай Тарасов</h3>
@@ -392,9 +429,17 @@
             <li class="team__item">
               <a href=""
                 ><img
-                  src="./images/mikhail_ermakov.jpg"
-                  alt="Photo: Михаил Ермаков"
-                  width="270"
+                  srcset="
+                    ./images/our_team/ermakov_1xd.jpg 270w,
+                    ./images/our_team/ermakov_1xt.jpg 354w,
+                    ./images/our_team/ermakov_1xm.jpg 450w,
+                    ./images/our_team/ermakov_2xd.jpg 540w,
+                    ./images/our_team/ermakov_2xt.jpg 708w,
+                    ./images/our_team/ermakov_2xm.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  src=".images/our_team/ermakov_1xm.jpg"
+                  alt="Михаил Ермаков"
               /></a>
               <div class="team__description">
                 <h3 class="team__member">Михаил Ермаков</h3>

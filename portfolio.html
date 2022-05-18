@@ -26,16 +26,76 @@
           <a href="./index.html" class="logo logo__header"
             ><span class="logo__effect">Web</span>Studio</a
           >
+          <!-- mobile menu -->
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="site-nav__list"
+            data-menu-button
+          >
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile navigation -->
+          <div class="mobile-menu" data-menu>
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation_link">Студия </a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation_link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation_link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__content">
+              <ul class="contact-us">
+                <li class="contact-us__item">
+                  <a href="" class="contact-us__tel">+38 096 111 11 11</a>
+                </li>
+                <li class="contact-us__item">
+                  <a href="" class="contact-us__email">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="follow-us">
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Twitter</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Facebook</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">LinkedIn</a>
+                </li>
+                <li class="follow-us__item">
+                  <a href="" class="follow-us-link">Instagram </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nav menu -->
+
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__current-page"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__current-page"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -100,10 +160,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_1.jpg"
+                    srcset="
+                      ./images/projects/technokriak_1x.jpg 450w,
+                      ./images/projects/technokriak_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/technokriak_1x.jpg"
                     alt="Открытый ноутбук с изображением фото членов команды на экране"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -125,10 +188,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_2.jpg"
+                    srcset="
+                      ./images/projects/new_orlean_vs_golden_star_1x.jpg 450w,
+                      ./images/projects/new_orlean_vs_golden_star_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/new_orlean_vs_golden_star_1x.jpg"
                     alt="Два баскетболиста в прыжке соревнуются за мяч"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -152,10 +218,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_3.jpg"
+                    srcset="
+                      ./images/projects/seafood_1x.jpg 450w,
+                      ./images/projects/seafood_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/seafood_1x.jpg"
                     alt="Надпись The Seafood Restaurant Est. 2001 на фоне вертикального изображенной рыбы"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -176,10 +245,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_4.jpg"
+                    srcset="
+                      ./images/projects/prime_1x.jpg 450w,
+                      ./images/projects/prime_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/prime_1x.jpg"
                     alt="Наушники"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -200,10 +272,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_5.jpg"
+                    srcset="
+                      ./images/projects/boxes_1x.jpg 450w,
+                      ./images/projects/boxes_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/boxes_1x.jpg"
                     alt="Две коробки разного размера"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -224,10 +299,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_6.jpg"
+                    srcset="
+                      ./images/projects/inspiration_1x.jpg 450w,
+                      ./images/projects/inspiration_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/inspiration_1x.jpg"
                     alt="iMac без клавиатуры с изображением карты мира на экране"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -248,10 +326,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_7.jpg"
+                    srcset="
+                      ./images/projects/lim_ed_1x.jpg 450w,
+                      ./images/projects/lim_ed_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/lim_ed_1x.jpg"
                     alt="Открытый журнал с картинками и заголовком I'am Limited Edition над фото двух женщин, показывающих знак мир поднятой над головой рукой"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -272,10 +353,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_8.jpg"
+                    srcset="
+                      ./images/projects/lab_1x.jpg 450w,
+                      ./images/projects/lab_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/lab_1x.jpg"
                     alt="Бирка на веревке с надписью LAB EL TAG"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
@@ -296,10 +380,13 @@
               <a href="#" class="project-link">
                 <div class="preview">
                   <img
-                    src="./images/project_9.jpg"
+                    srcset="
+                      ./images/projects/growing_business_1x.jpg 450w,
+                      ./images/projects/growing_business_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src=".images/projects/growing_business_1x.jpg"
                     alt="Пользователь печатает на ноутбуке"
-                    width="370"
-                    height="294"
                   />
                   <div class="project-description">
                     <p class="info">
