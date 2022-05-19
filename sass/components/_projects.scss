@@ -21,6 +21,12 @@
     &:last-of-type {
             margin-bottom: 0;
         }
+    @media  screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 1 * 30px) / 2);
@@ -66,6 +72,12 @@
      border-top: none;
     background-color: $main-white-color;
      overflow: hidden;
+
+     @media screen and (min-width: 768px) {
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1;
+     }
 
  }
  }
