@@ -397,7 +397,6 @@ img {
 }
 
 .section {
-  /*outline: 10px dotted blue;*/
   padding: 60px 0;
 }
 
@@ -1000,13 +999,6 @@ img {
   margin-bottom: 30px;
 }
 
-/* .check-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-
-} */
 .checkbox-icon {
   display: inline-block;
   width: 16px;
