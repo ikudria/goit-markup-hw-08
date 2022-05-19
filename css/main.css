@@ -453,6 +453,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .advantages__item {
     flex-basis: calc((100% - 1 * 30px) / 2);
