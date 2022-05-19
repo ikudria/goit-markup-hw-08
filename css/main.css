@@ -459,7 +459,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 678px) and (max-width: 1199px) {
   .advantages__item {
     flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
