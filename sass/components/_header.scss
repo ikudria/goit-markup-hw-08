@@ -7,8 +7,8 @@
     position: relative;
     min-height: 60px;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    
   }
 
 
@@ -27,21 +27,18 @@
 
 .logo__header {
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
     color: #000000;
 
     @media screen and (max-width: 767px) {
       text-align: left;
-      // padding-top: 16px;
-      // padding-bottom: 16px;
       margin: 0;
       @include font(24px, 1.16, 700);
       
     }   
 
-         @media screen and (min-width: 768px) and (max-width: 1199px) {
-          //  margin-right: 88px;
+         @media screen and (min-width: 768px)  {
+         padding: 24px 0;
           align-self: start;
           @include font(24px, 1.16, 400);
          }
