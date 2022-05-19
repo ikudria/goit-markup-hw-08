@@ -15,10 +15,12 @@
 // Project for desktop
 
  .project {
-     
    
      width: 100%;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
+    &:last-of-type {
+            margin-bottom: 0;
+        }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 1 * 30px) / 2);
@@ -26,6 +28,8 @@
         &:nth-child(2n) {
             margin-right: 0;
         }
+
+      
     }
 
          @media screen and (min-width: 1200px) {

@@ -194,13 +194,14 @@
 
 .legal-notice {
 
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.16;
     color: $primary-text-color;
     font-weight: 400;
 
     @media screen and (min-width: 1200px) {
         line-height: 1.7;
+        font-size: 14px;
     }
 }
 

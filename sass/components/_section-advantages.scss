@@ -85,10 +85,20 @@
     @include font(14px, 1.14);
 
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
+
+
+
 
 .advantages-description {
     @include font(14px, 1.7, 400);
 
     color: $primary-text-color;
+
+    text-align: left;
+    
 }

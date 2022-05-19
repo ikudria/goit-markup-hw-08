@@ -1,81 +1,85 @@
-// Hero
-
 .hero {
-    max-width: 1600px;
+
     margin: 0 auto;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: $overlay-bg-color;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+            padding-bottom: 200px;
+    }
+   
     background-image: linear-gradient(to bottom,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url('../images/bg-img/header_mob_1x.jpg');
 
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-color: $overlay-bg-color;
 
 
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(to bottom,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('../images/bg-img/header_mob_2x.jpg');
-    }
-}
 
-@media (min-width: 489px) {
-    .hero {
-        background-image: linear-gradient(to bottom,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('../images/bg-img/header_tab_1x.jpg');
-    }
-}
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(to bottom,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('../images/bg-img/header_tab_2x.jpg');
-    }
-}
-
-@media (min-width: 769px) {
-    .hero {
-        background-image: linear-gradient(to bottom,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('../images/bg-img/header_desk_1x.jpg');
-    }
-}
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(to bottom,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('../images/bg-img/header_desk_2x.jpg');
-    }
-}
-
-        @media screen and (min-width:1200px) {
-            padding-top: 200px;
-            padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/bg-img/header_mob_2x.jpg');
         }
+    }
+
+    @media (min-width: 489px) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/bg-img/header_tab_1x.jpg');
         }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/bg-img/header_tab_2x.jpg');
+        }
+    }}
+
+    @media (min-width: 769px) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/bg-img/header_desk_1x.jpg');
+        }
+    
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/bg-img/header_desk_2x.jpg');
+        }
+    }}
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
 
 
 
